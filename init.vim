@@ -357,6 +357,7 @@ let g:coc_global_extensions = [
   \ 'coc-tsserver',
   \ 'coc-vetur',
   \ 'coc-java',
+  \ 'coc-python',
   \ ]
 
 autocmd BufNew,BufEnter *.json,*.vim,*.lua,*.md execute "silent! CocDisable"
