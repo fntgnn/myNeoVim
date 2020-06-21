@@ -1,4 +1,33 @@
 " BASIC SETUP
+
+call plug#begin('~/.config/nvim/plugged')
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'tweekmonster/gofmt.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'vim-utils/vim-man'
+Plug 'mbbill/undotree'
+Plug 'sheerun/vim-polyglot'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'kien/ctrlp.vim'
+Plug 'mattn/emmet-vim'
+Plug 'preservim/nerdcommenter'
+Plug 'preservim/nerdtree'
+Plug 'vimlab/split-term.vim'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'ap/vim-css-color'
+Plug 'adelarsq/vim-matchit'
+Plug 'tpope/vim-surround'
+Plug 'gruvbox-community/gruvbox'
+Plug 'sainnhe/gruvbox-material'
+Plug 'phanviet/vim-monokai-pro'
+Plug 'vim-airline/vim-airline'
+Plug 'flazz/vim-colorschemes'
+
+call plug#end()
+
 colorscheme gruvbox
 let g:airline_theme='gruvbox'
 set background=dark
@@ -30,6 +59,7 @@ set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
 set ignorecase          " Use case insensitive search, except when using capital letters
 set smartcase
+
 
 " set colorcolumn=80
 " highlight ColorColumn ctermbg=0 guibg=lightgrey
