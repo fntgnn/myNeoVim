@@ -28,6 +28,8 @@ Plug 'flazz/vim-colorschemes'
 
 call plug#end()
 
+let g:coc_start_at_startup = v:false
+
 colorscheme gruvbox
 let g:airline_theme='gruvbox'
 set background=dark
