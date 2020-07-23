@@ -8,8 +8,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'vim-utils/vim-man'
 Plug 'mbbill/undotree'
 Plug 'sheerun/vim-polyglot'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+" Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'kien/ctrlp.vim'
 Plug 'mattn/emmet-vim'
@@ -61,7 +61,7 @@ set ignorecase          " Use case insensitive search, except when using capital
 set smartcase
 
 
-" set colorcolumn=80
+set colorcolumn=80
 " highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 " Change cursor in insert mode:
