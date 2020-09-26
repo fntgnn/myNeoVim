@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/fntgnn/prove/brentalert_v2/backend/bot'
+let g:netrw_dirhist_3='/home/fntgnn/prove/brentalert_v2/backend'
+let g:netrw_dirhist_2='/home/fntgnn/prove/brentalert_v2'
+let g:netrw_dirhist_1='/home/fntgnn/.config/nvim'

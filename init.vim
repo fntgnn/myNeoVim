@@ -2,12 +2,12 @@
 
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'tweekmonster/gofmt.vim'
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'tweekmonster/gofmt.vim'
 Plug 'tpope/vim-fugitive'
-Plug 'vim-utils/vim-man'
-Plug 'mbbill/undotree'
-Plug 'sheerun/vim-polyglot'
+" Plug 'vim-utils/vim-man'
+" Plug 'mbbill/undotree'
+" Plug 'sheerun/vim-polyglot'
 " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 " Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
@@ -16,15 +16,15 @@ Plug 'mattn/emmet-vim'
 Plug 'preservim/nerdcommenter'
 Plug 'preservim/nerdtree'
 Plug 'vimlab/split-term.vim'
-Plug 'vim-airline/vim-airline-themes'
+" Plug 'vim-airline/vim-airline-themes'
 Plug 'ap/vim-css-color'
 Plug 'adelarsq/vim-matchit'
 Plug 'tpope/vim-surround'
 Plug 'gruvbox-community/gruvbox'
-Plug 'sainnhe/gruvbox-material'
-Plug 'phanviet/vim-monokai-pro'
-Plug 'vim-airline/vim-airline'
-Plug 'flazz/vim-colorschemes'
+" Plug 'sainnhe/gruvbox-material'
+" Plug 'phanviet/vim-monokai-pro'
+" Plug 'vim-airline/vim-airline'
+" Plug 'flazz/vim-colorschemes'
 
 call plug#end()
 
@@ -102,35 +102,35 @@ set autoindent
 set ruler
 
 " "Always display the status line, even if only one window is displayed
-" set laststatus=2
+set laststatus=2
+"
+"SET STATUSBAR
+function! GitBranch()
+ return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
+endfunction
+"
+function! StatuslineGit()
+ let l:branchname = GitBranch()
+ return strlen(l:branchname) > 0?'  '.l:branchname.' ':''
+endfunction
 " "
-" "SET STATUSBAR
-" function! GitBranch()
-"  return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
-" endfunction
-" "
-" function! StatuslineGit()
-"  let l:branchname = GitBranch()
-"  return strlen(l:branchname) > 0?'  '.l:branchname.' ':''
-" endfunction
-" " "
-" " " hi Base guibg=#212333 guifg=#212333
-" set statusline=
-" " set statusline += "%#Base#"
-" "
-" " set statusline+=%#PmenuSel#
-" set statusline+=%{StatuslineGit()}
-" set statusline+=%#LineNr#
-" set statusline+=\ %f
-" set statusline+=%m\
-" set statusline+=%=
-" set statusline+=%#CursorColumn#
-" set statusline+=\ %y
-" set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
-" set statusline+=\[%{&fileformat}\]
-" set statusline+=\ %p%%
-" set statusline+=\ %l:%c
-" set statusline+=\
+" " hi Base guibg=#212333 guifg=#212333
+set statusline=
+" set statusline += "%#Base#"
+"
+" set statusline+=%#PmenuSel#
+set statusline+=%{StatuslineGit()}
+set statusline+=%#LineNr#
+set statusline+=\ %f
+set statusline+=%m\
+set statusline+=%=
+set statusline+=%#CursorColumn#
+set statusline+=\ %y
+set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
+set statusline+=\[%{&fileformat}\]
+set statusline+=\ %p%%
+set statusline+=\ %l:%c
+set statusline+=\
 "
 " Instead of failing a command because of unsaved changes, instead raise a
 " dialogue asking if you wish to save changed files.
