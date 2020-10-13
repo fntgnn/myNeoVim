@@ -4,18 +4,18 @@ call plug#begin('~/.config/nvim/plugged')
 
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug 'tweekmonster/gofmt.vim'
-Plug 'tpope/vim-fugitive'
+" Plug 'tpope/vim-fugitive'
 " Plug 'vim-utils/vim-man'
 " Plug 'mbbill/undotree'
 " Plug 'sheerun/vim-polyglot'
 " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 " Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
-Plug 'kien/ctrlp.vim'
+" Plug 'kien/ctrlp.vim'
 Plug 'mattn/emmet-vim'
 Plug 'preservim/nerdcommenter'
 Plug 'preservim/nerdtree'
-Plug 'vimlab/split-term.vim'
+" Plug 'vimlab/split-term.vim'
 " Plug 'vim-airline/vim-airline-themes'
 Plug 'ap/vim-css-color'
 Plug 'adelarsq/vim-matchit'
