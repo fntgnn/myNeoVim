@@ -36,7 +36,7 @@ set background=dark
 " if color looks wrong...
 if ($TERM == "screen" || $TERM =~ "256")
     set t_Co=256
-    set t_kb=
+    "set t_kb=
     set t_ut=
 endif
 "gvim
